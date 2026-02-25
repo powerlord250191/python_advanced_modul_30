@@ -1,6 +1,8 @@
-from flask import jsonify, request
 from datetime import datetime
-from main.models import Client, Parking, ClientParking, db, create_app
+
+from flask import jsonify, request
+
+from main.models import Client, ClientParking, Parking, create_app, db
 
 app = create_app()
 
