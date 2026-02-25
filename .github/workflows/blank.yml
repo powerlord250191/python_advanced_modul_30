@@ -37,4 +37,5 @@ jobs:
         run: mypy . --ignore-missing-imports --follow-imports=skip
       - name: start linter black
         run: black --diff --check **/*.py
-      
+      - name: start tests
+        run: pytest
